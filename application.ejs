@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Place Order</title>
+</head>
+
+<body>
+
+    <h1><strong> Application</strong></h1>
+    <form onSubmit="return confirm('Are you sure you want to submit your application?\n You will not be able to change your information once submitted.')" action="/application" method="post">
+    <fieldset>
+        <label> <strong>Name: </strong> <input type="text" name="name"/></label>
+        <br>
+        <br>
+        <label> <strong>GPA: </strong> <input type="text" name="gpa"/></label>
+        <label> <strong> Email Address: </strong> <input type="email" name="email"></label>
+        <br>
+        <br>
+
+        
+        <strong>BackGroundInformation: </strong>
+
+        <br>
+        
+		 <label>  <textarea rows="5" cols="80" name="information"></textarea></label>
+    </fieldset>
+
+
+
+    <br>
+	<input type="reset" />
+	<input type="submit" value="Sumbit Application"/>
+
+
+</form>
+
+    <br>
+
+    <a href="/">HOME</a>
+
+
+
+
+</body>
